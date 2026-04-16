@@ -41,16 +41,8 @@ body {
     top: 2rem;
 }
 
-.logo h1 {
-    font-size: 1.5rem;
-    color: #457E7B;
-    margin-bottom: 0.5rem;
-}
-
-.tagline {
-    font-size: 0.9rem;
-    color: #999;
-    font-style: italic;
+.logo a:hover span {
+    color: #B95822;
 }
 
 /* Moduler navigation */
