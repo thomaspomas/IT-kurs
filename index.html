@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYH:s IT-grundkurs – Lär dig din dator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar med moduler -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h1><a href="#" onclick="renderLandingPage()" style="color: inherit; text-decoration: none;">💻 KYH:s IT-grundkurs</a></h1>
+                <p class="tagline">Lär dig din dator från början</p>
+            </div>
+            
+            <nav class="modules">
+                <button class="module-btn active" data-module="1">
+                    <span class="number">1</span>
+                    <span class="title">Hårdvara & Mjukvara</span>
+                </button>
+                <button class="module-btn" data-module="2">
+                    <span class="number">2</span>
+                    <span class="title">Operativsystem</span>
+                </button>
+                <button class="module-btn" data-module="3">
+                    <span class="number">3</span>
+                    <span class="title">Filhantering</span>
+                </button>
+                <button class="module-btn" data-module="4">
+                    <span class="number">4</span>
+                    <span class="title">Installera programvara</span>
+                </button>
+                <button class="module-btn" data-module="5">
+                    <span class="number">5</span>
+                    <span class="title">Uppdateringar</span>
+                </button>
+                <button class="module-btn" data-module="6">
+                    <span class="number">6</span>
+                    <span class="title">Systemunderhåll</span>
+                </button>
+                <button class="module-btn" data-module="7">
+                    <span class="number">7</span>
+                    <span class="title">Mappstruktur</span>
+                </button>
+                <button class="module-btn" data-module="8">
+                    <span class="number">8</span>
+                    <span class="title">Filtyper & Filändelser</span>
+                </button>
+            </nav>
+
+            <div class="progress-section">
+                <h3>Din progress</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <p class="progress-text" id="progressText">0/8 moduler</p>
+            </div>
+        </aside>
+
+        <!-- Huvudinnehål -->
+        <main class="main-content">
+            <div id="moduleContent"></div>
+            
+            <div class="navigation-buttons">
+                <button id="prevBtn" class="btn btn-secondary" style="display:none;">← Föregående</button>
+                <button id="nextBtn" class="btn btn-primary">Nästa →</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
