@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #457E7B;
+    background: white;
     min-height: 100vh;
     color: #333;
 }
@@ -24,6 +24,7 @@ body {
 .sidebar {
     width: 300px;
     background: white;
+    border: 2px solid #457E7B;
     border-radius: 15px;
     padding: 2rem;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
@@ -133,6 +134,7 @@ body {
 .main-content {
     flex: 1;
     background: white;
+    border: 2px solid #457E7B;
     border-radius: 15px;
     padding: 3rem;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
