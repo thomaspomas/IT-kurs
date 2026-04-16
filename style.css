@@ -6,12 +6,12 @@
 
 html,
 body {
-    background: white;
+    background: rgba(185, 88, 34, 0.2);
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: white;
+    background: rgba(185, 88, 34, 0.2);
     min-height: 100vh;
     color: #333;
 }
