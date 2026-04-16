@@ -68,7 +68,7 @@ const modules = [
             },
             {
                 title: "Vad gör operativsystemet för dig?",
-                content: "Operativsystemet är din datorsassistent – det gör många viktiga saker:",
+                content: "Operativsystemet är din datorassistent – det gör många viktiga saker:",
                 example: "1. FILHANTERING: Håller ordning på dina dokument, bilder och program\n2. PROGRAM: Låter dig öppna och använda dina program\n3. RESURSER: Delar upp processor-kraft, RAM och lagring mellan program\n4. UTSKRIFTER: Hanterar utskrifter till skrivare\n5. SÄKERHET: Skyddar datorn från farlig kod och otillförlitlig åtkomst\n6. UPPDATERINGAR: Hämtar nya säkerhetsfixar och förbättringar\n7. ANVÄNDARGRÄNSSNITT: Ger dig en snygg och lätt att använda miljö"
             }
         ],
@@ -140,10 +140,10 @@ const modules = [
         subtitle: "Hur man hittar, laddar ned och installerar program",
         sections: [
             {
-                title: "Vad innebär det att "installera"? ",
+                title: "Vad innebär det att \"installera\"?",
                 analogy: "Att installera ett program är som att montera möbler – du följer instruktioner och placerar bitarna rätt så allt fungerar.",
-                content: "När du installerar ett program, placerar datorn programfilerna på rätt plats så att programmet kan köra korrekt. Du kan inte bara kopiera en fil och förvänta dig att den fungerar – den behöver oftast installeras först.",
-                example: "Exempel: Du kan inte bara "ladda ner" Spotify till din dator – du måste installera det så att det vet var allt ska vara."
+                content: "När du installerar ett program, placerar datorn programfilerna på rätt plats så att programmet kan köra korrekt. Du kan inte bara \"kopiera\" en fil och förvänta dig att den fungerar – den behöver oftast installeras först.",
+                example: "Exempel: Du kan inte bara \"ladda ner\" Spotify till din dator – du måste installera det så att det vet var allt ska vara."
             },
             {
                 title: "Var hittar man program?",
@@ -200,7 +200,7 @@ const modules = [
             {
                 title: "Program-uppdateringar",
                 content: "Dina installerade program behöver också uppdateras:",
-                example: "AUTOMATISKA UPPDATERINGAR:\n- Många program uppdateras automatiskt\n- Du märker bara att en ny version installeras\n\nMANUELLA UPPDATERINGAR:\n- Öppna programmet\n- Gå till Hjälp eller Inställningar\n- Titta efter 'Om' eller 'Uppdatera'\n- Klicka om det finns en uppdatering\n\nFÖR MAC:\n- App Store håller ofta uppdaterna automatisk\n- Du kan också gå till App Store och klicka 'Uppdateringar'"
+                example: "AUTOMATISKA UPPDATERINGAR:\n- Många program uppdateras automatiskt\n- Du märker bara att en ny version installeras\n\nMANUELLA UPPDATERINGAR:\n- Öppna programmet\n- Gå till Hjälp eller Inställningar\n- Titta efter 'Om' eller 'Uppdatera'\n- Klicka om det finns en uppdatering\n\nFÖR MAC:\n- App Store håller ofta uppdateringar automatiskt\n- Du kan också gå till App Store och klicka 'Uppdateringar'"
             },
             {
                 title: "Tips och best practice",
@@ -209,7 +209,7 @@ const modules = [
             }
         ],
         quiz: {
-            question: "Varför är säkerhetsupdateringar viktiga?",
+            question: "Varför är säkerhetsuppdateringar viktiga?",
             options: [
                 { text: "För att göra datorn snygg", correct: false },
                 { text: "För att stoppa hackers från att skada datorn och stjäla data", correct: true },
@@ -527,9 +527,12 @@ function prevSection() {
     } else {
         // Gå till föregående modul
         if (currentModuleId > 1) {
-            loadModule(currentModuleId - 1);
-            const prevModule = modules.find(m => m.id === currentModuleId - 1);
+            const prevModuleId = currentModuleId - 1;
+            const prevModule = modules.find(m => m.id === prevModuleId);
+            currentModuleId = prevModuleId;
             currentSectionIndex = prevModule.sections.length - 1;
+            document.querySelectorAll('.module-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`[data-module="${prevModuleId}"]`).classList.add('active');
             renderSection();
         }
     }
