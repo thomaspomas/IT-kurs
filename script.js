@@ -1,4 +1,4 @@
-// Курсans moduler och innehål med alla 8 moduler
+// Kursens moduler och innehåll med alla 8 moduler
 const modules = [
     {
         id: 1,
@@ -20,12 +20,12 @@ const modules = [
             {
                 title: "Hur hänger de ihop?",
                 analogy: "Hårdvaran och mjukvaran är som två delar av samma team – de behöver varandra för att lyckas.",
-                content: "En datorn är egentligen två saker som fungerar tillsammans:\n1. HÅRDVARA: Den fysiska maskinen som gör beräkningar\n2. MJUKVARA: Instruktioner som säger vad maskinen ska göra\n\nVarken hårdvara eller mjukvara fungerar utan den andra. Du behöver båda.",
+                content: "En dator är egentligen två saker som fungerar tillsammans:\n1. HÅRDVARA: Den fysiska maskinen som gör beräkningar\n2. MJUKVARA: Instruktioner som säger vad maskinen ska göra\n\nVarken hårdvara eller mjukvara fungerar utan den andra. Du behöver båda.",
                 example: "Exempel 1: Att spela musik\n- Hårdvara: högtalare, ljudkort, processor\n- Mjukvara: musikspelarprogrammet (t.ex. Spotify)\n\nExempel 2: Att skriva ett brev\n- Hårdvara: tangentbord, skärm, processor\n- Mjukvara: Word-programmet\n\nExempel 3: Att titta på en film\n- Hårdvara: skärmen, procesorn, grafikkort\n- Mjukvara: filmspelarprogrammet (t.ex. Netflix)"
             },
             {
                 title: "De viktigaste hårdvarukomponenterna",
-                analogy: "Tänk på datorn som ett klassrum – varje del har en viktig roll.",
+                analogy: "Tänk på datorn som ett system av enheter – varje del har en viktig roll.",
                 content: "Här är de viktigaste sakerna att veta om:",
                 example: "PROCESSOR (CPU) – Hjärnan\n- Gör alla beräkningar\n- Snabbare processor = datorn går snabbare\n- Exempel: Intel i5, AMD Ryzen\n\nMINNE (RAM) – Kortidsminnet\n- Mycket snabbt minne för saker som körs just nu\n- Mer RAM = du kan ha fler program öppna\n- Försvinner när du stänger av datorn\n- Exempel: 8GB, 16GB, 32GB\n\nHÅRDDISK eller SSD – Långtidsminnet\n- Sparar allt permanent\n- Försvinner INTE när du stänger av datorn\n- SSD är snabbare än gamla hårddiskar\n- Exempel: 256GB, 512GB, 1TB\n\nSKÄRM (Monitor) – Utmatningen\n- Det du ser\n- Olika storlekar och kvaliteter\n- Exempel: 24 tum, 27 tum\n\nTANGENTBORD och MUS – Inmatningen\n- Hur du för in information\n- Du använder dessa för att kontrollera datorn"
             }
@@ -37,34 +37,34 @@ const modules = [
                 { text: "Tangentbordet", correct: true },
                 { text: "Windows 11", correct: false }
             ],
-            feedback: { correct: "Rätt! Tangentbordet är något fysiskt du kan röra på, så det är hårdvara. 🎉", incorrect: "Nästan! Hårdvara är något du kan ta och röra på. Tangentbordet är ett exempel – både Chrome och Windows är mjukvara (program)." }
+            feedback: { correct: "Rätt! Tangentbordet är något fysiskt du kan ta på, så det är hårdvara. 🎉", incorrect: "Nästan! Hårdvara är något du kan ta och röra på. Tangentbordet är ett exempel – både Chrome och Windows är mjukvara (program)." }
         }
     },
     {
         id: 2,
         title: "Operativsystem",
-        subtitle: "Vad är ett OS? Fokus på Windows 11 och macOS",
+        subtitle: "Vad är ett OS?  Windows 11 och macOS",
         sections: [
             {
                 title: "Vad är ett operativsystem?",
                 analogy: "Tänk på operativsystemet som en styrman på ett skepp. Det navigerar och styr allt – vilka program som får köra, när de får köra, hur de delar på resurserna, och vart allt ska gå.",
-                content: "Operativsystemet (OS) är den viktigaste mjukvaran på din dator. Det är systemet som styr ALLT – det säger åt programmen vad de får göra, det förhindrar att saker kör på varandra, och det hanterar filer och resurser.",
+                content: "Operativsystemet (OS:et) är den viktigaste mjukvaran på din dator. Det är systemet som styr ALLT – det säger åt programmen vad de får göra, det förhindrar att saker kör på varandra, och det hanterar filer och resurser.",
                 example: "De två vanligaste operativsystemen är:\n- Windows (på många bärbara och stationära datorer)\n- macOS (på Apple-datorer)"
             },
             {
                 title: "Windows 11",
                 content: "Windows 11 är Microsofts senaste operativsystem och det vanligaste OS på världen. Det körs på miljoner datorer överallt.",
-                example: "Du hittar Windows på:\n- Bärbara datorer (laptops)\n- Stationära datorer (skrivbordsdatorer)\n- Mindre enheter som tablets\n\nWINDOWS SKÄRMEN FÖRKLARAD:\n- Start-knapp (nederst till vänster) – klicka här för att söka program\n- Taskbar – visar programmen som körs\n- Desktop – här placerar du mappar och genvägar\n- System Tray – visar klocka, volym, wifi-status"
+                example: "Du hittar Windows på:\n- Bärbara datorer (laptops)\n- Stationära datorer (skrivbordsdatorer)\n- Även vissa mindre enheter som tablets\n\nWINDOWS SKÄRMEN FÖRKLARAD:\n- Start-knapp (nederst) – klicka här för att söka program\n- Taskbar – visar programmen som körs\n- Desktop – här placerar du mappar och genvägar\n- System Tray – visar klocka, volym, wifi-status"
             },
             {
                 title: "macOS",
                 content: "macOS är Apples operativsystem som körs på Mac-datorer. Det är känt för att vara väldigt användarvänligt, säkert och ha en snygg design.",
-                example: "Du hittar macOS på:\n- MacBook-laptops\n- iMac-skärmar\n- Mac Studio och Mac Mini\n\nmacOS SKÄRMEN FÖRKLARAD:\n- Dock (nederst på skärmen) – visar dina favoritprogram\n- Menu Bar (överst) – visar tid, volym, wifi, och mera\n- Finder – filhanteraren (som Windows Explorer)\n- Launchpad – alla installerade program"
+                example: "Du hittar macOS på:\n- MacBook-laptops\n- iMacs\n- Mac Studio och Mac Mini\n\nmacOS SKÄRMEN FÖRKLARAD:\n- Dock (nederst på skärmen) – visar dina favoritprogram\n- Menu Bar (överst) – visar tid, volym, wifi, och mera\n- Finder – filhanteraren (som Windows Explorer)\n- Launchpad – alla installerade program"
             },
             {
                 title: "Andra operativsystem",
                 content: "Det finns fler operativsystem än Windows och macOS:",
-                example: "LINUX\n- Gratis och öppen källkod\n- Använd av många professioner\n- Exempel: Ubuntu, Fedora\n\nchromOS\n- Lätt operativsystem för Chromebooks\n- Fokuserar på webben och Google-appar\n\niOS och Android\n- För smartphones och tablets\n- Vi fokuserar på dator-OS här"
+                example: "LINUX\n- Gratis och öppen källkod\n- Använd av många proffs och mycket vanligt på servrar\n- Exempel: Ubuntu, Fedora\n\nchromeOS\n- Operativsystem för Chromebooks\n- Fokuserar på webben och Google-appar\n\niOS och Android\n- För smartphones och tablets\n- Vi kommer inte att tala om dessa OS här, men kan vara bra att veta om"
             },
             {
                 title: "Vad gör operativsystemet för dig?",
@@ -79,7 +79,7 @@ const modules = [
                 { text: "Windows 11", correct: true },
                 { text: "Google Chrome", correct: false }
             ],
-            feedback: { correct: "Perfekt! Windows 11 är ett operativsystem som styr datorn. Du är med! 🚀", incorrect: "Nästan! Ett operativsystem är systemet som styr HELA datorn. Windows 11 är ett exempel – det är det som startar när du tänder på datorn." }
+            feedback: { correct: "Perfekt! Windows 11 är ett operativsystem som styr datorn. Du är med! 🚀", incorrect: "Nästan! Ett operativsystem är systemet som styr HELA datorn. Windows 11 är ett exempel – det är det som startar när du startar datorn." }
         }
     },
     {
@@ -140,10 +140,10 @@ const modules = [
         subtitle: "Hur man hittar, laddar ned och installerar program",
         sections: [
             {
-                title: "Vad är installera?",
+                title: "Vad innebär det att "installera"? ",
                 analogy: "Att installera ett program är som att montera möbler – du följer instruktioner och placerar bitarna rätt så allt fungerar.",
                 content: "När du installerar ett program, placerar datorn programfilerna på rätt plats så att programmet kan köra korrekt. Du kan inte bara kopiera en fil och förvänta dig att den fungerar – den behöver oftast installeras först.",
-                example: "Exempel: Du kan inte bara kopiera Spotify till din dator – du måste installera det så att det vet var allt ska vara."
+                example: "Exempel: Du kan inte bara "ladda ner" Spotify till din dator – du måste installera det så att det vet var allt ska vara."
             },
             {
                 title: "Var hittar man program?",
@@ -190,7 +190,7 @@ const modules = [
             {
                 title: "Varför är uppdateringar viktiga?",
                 content: "Uppdateringar är MYCKET viktiga – faktiskt nästan viktigare än att spara dina filer!",
-                example: "SÄKERHET (MED VIKTIG!):\n- Hackers och virus-skapare hittar säkerhetshål\n- Utvecklarna fixar dessa hål med uppdateringar\n- Utan uppdateringar kan datorn bli hackad och dina data stjälas\n\nPRESTANDA:\n- Uppdateringar gör ofta att datorn går snabbare\n- Gamla program blir mindre effektiva\n\nNYA FUNKTIONER:\n- Du får nya features att använda\n- Programmen blir bättre med tiden\n\nSTABILITET:\n- Buggar repareras så programmen inte kraschar\n- Allt fungerar smidigare tillsammans"
+                example: "SÄKERHET (MEST VIKTIGT!):\n- Hackers och virus-skapare hittar säkerhetshål\n- Utvecklarna fixar dessa hål med uppdateringar\n- Utan uppdateringar kan datorn bli hackad och dina data stjälas\n\nPRESTANDA:\n- Uppdateringar gör ofta att datorn går snabbare\n- Gamla program blir mindre effektiva\n\nNYA FUNKTIONER:\n- Du får nya features att använda\n- Programmen blir bättre med tiden\n\nSTABILITET:\n- Buggar repareras så programmen inte kraschar\n- Allt fungerar smidigare tillsammans"
             },
             {
                 title: "Så installerar du uppdateringar",
@@ -324,12 +324,12 @@ const modules = [
             {
                 title: "De viktigaste filtyperna",
                 content: "Här är de vanligaste filtyperna du kommer stöta på:",
-                example: "TEXT & DOKUMENT:\n.docx – Word-dokument\n.pdf – PDF (kan inte ändra lätt)\n.txt – Enkel textfil\n.xlsx – Excel-kalkylark\n\nBILDER:\n.jpg – Fotografi (små filer, lite sämre kvalitet)\n.png – Bilder med genomskinlighet (höga kvalitet)\n.gif – Animerad bild\n.bmp – Bitmap (stort filformat)\n\nLJUD:\n.mp3 – Vanligt audioformat\n.wav – Högkvalitets ljud\n.m4a – Apple-ljud\n\nVIDEO:\n.mp4 – Vanligt videoformat\n.avi – Äldre videoformat\n.mkv – Högkvalitets video \n.mov – Apple-video\n\nPROGRAM:\n.exe – Windows-program\n.msi – Windows installer\n.dmg – Mac-program\n.app – Mac-program\n\nKOMPRIMERARDE:\n.zip – Zip-fil (tryckt fil)\n.rar – RAR-fil (änne en typ av komprimering)"
+                example: "TEXT & DOKUMENT:\n.docx – Word-dokument\n.pdf – PDF (kan inte ändra lätt)\n.txt – Enkel textfil\n.xlsx – Excel-kalkylark\n\nBILDER:\n.jpg – Fotografi (små filer, lite sämre kvalitet)\n.png – Bilder med genomskinlighet (höga kvalitet)\n.gif – Animerad bild\n.bmp – Bitmap (stort filformat)\n\nLJUD:\n.mp3 – Vanligt audioformat\n.wav – Högkvalitets ljud\n.m4a – Apple-ljud\n\nVIDEO:\n.mp4 – Vanligt videoformat\n.avi – Äldre videoformat\n.mkv – Högkvalitets video \n.mov – Apple-video\n\nPROGRAM:\n.exe – Windows-program\n.msi – Windows installer\n.dmg – Mac-program\n.app – Mac-program\n\nKOMPRIMERARDE:\n.zip – Zip-fil (tryckt fil)\n.rar – RAR-fil (ännu en typ av komprimering)"
             },
             {
                 title: "Vilken filändelse för vad?",
                 content: "Du bör välja rätt filändelse beroende på vad du ska göra:",
-                example: "OM DU VILL SKRIVA EN RAPPORT:\n✓ .docx (Word) – lätt att redigera senare\n✓ .pdf – när du är helt klar (ingen kan ändra lätt)\n✗ .txt – för enkelt\n\nOM DU VILL SKICKA EN BILD:\n✓ .jpg – små filer, går snabbt att skicka\n✓ .png – bätter kvalitet\n✗ .bmp – alltför stor fil!\n\nOM DU VILL SPARA MUSIK:\n✓ .mp3 – vanligt och alla kan spela det\n✓ .m4a – om du använder Apple\n✓ .wav – högt kvalitet men stora filer\n\nOM DU VILL SPARA MÅNGA FILER I EN:\n✓ .zip – komprimera för att spara utrymme\n✓ .rar – komprimering med flera delar\n\nOM DU VILL SÄKERSTÄLLA ATT INGEN ÄNDRAR:\n✓ .pdf – låst format, nästan omöjligt att ändra"
+                example: "OM DU VILL SKRIVA EN RAPPORT:\n✓ .docx (Word) – lätt att redigera senare\n✓ .pdf – när du är helt klar (ingen kan ändra lätt)\n✗ .txt – för enkelt\n\nOM DU VILL SKICKA EN BILD:\n✓ .jpg – små filer, går snabbt att skicka\n✓ .png – bättre kvalitet\n✗ .bmp – alltför stor fil!\n\nOM DU VILL SPARA MUSIK:\n✓ .mp3 – vanligt och alla kan spela det\n✓ .m4a – om du använder Apple\n✓ .wav – högt kvalitet men stora filer\n\nOM DU VILL SPARA MÅNGA FILER I EN:\n✓ .zip – komprimera för att spara utrymme\n✓ .rar – komprimering med flera delar\n\nOM DU VILL SÄKERSTÄLLA ATT INGEN ÄNDRAR:\n✓ .pdf – låst format, nästan omöjligt att ändra"
             },
             {
                 title: "Hur man visar filändelser",
@@ -348,7 +348,7 @@ const modules = [
             }
         ],
         quiz: {
-            question: "Vilken filändelse passar en fotografi bäst?",
+            question: "Vilken filändelse passar ett fotografi bäst?",
             options: [
                 { text: ".docx", correct: false },
                 { text: ".jpg eller .png", correct: true },
