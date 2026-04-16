@@ -586,7 +586,7 @@ function renderLandingPage() {
     const html = `
         <div class="landing-page">
             <div class="welcome-header">
-                <h1>🎓 Välkommen till KYH:s IT-grundkurs!</h1>
+                <h1>Välkommen till KYH:s IT-grundkurs!</h1>
                 <p class="welcome-subtitle">Lär dig datorn från grunden – steg för steg</p>
             </div>
 
