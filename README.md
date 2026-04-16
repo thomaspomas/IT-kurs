@@ -21,6 +21,10 @@ Detta är en interaktiv webbaserad kurs för nybörjare som förklarar grundläg
 2. Navigera mellan modulerna i vänstermenyn.
 3. Klicka på knapparna för att gå vidare och svara på quiz-frågorna.
 
+## GitHub Pages
+
+Detta projekt kan publiceras direkt som en statisk webbplats med GitHub Pages. När du har skapat repot på GitHub går du till `Settings > Pages` och väljer `main` som källa. Därefter öppnas sidan under `https://thomaspomas.github.io/IT-kurs/`.
+
 ## License
 
 Detta projekt är licensierat under MIT License. Se `LICENSE` för detaljer.
