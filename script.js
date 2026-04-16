@@ -360,15 +360,25 @@ const modules = [
 ];
 
 // Spåra användarens framsteg
-let completedModules = JSON.parse(localStorage.getItem('completedModules')) || [];
+let completedModules = [];
+try {
+    completedModules = JSON.parse(localStorage.getItem('completedModules')) || [];
+} catch (e) {
+    completedModules = [];
+}
 let currentModuleId = 1;
 let currentSectionIndex = 0;
 
 // Initiera kursen
 document.addEventListener('DOMContentLoaded', function() {
-    renderLandingPage();
-    setupEventListeners();
-    updateProgress();
+    try {
+        renderLandingPage();
+        setupEventListeners();
+        updateProgress();
+    } catch (e) {
+        document.getElementById('moduleContent').innerHTML =
+            '<p style="color:red;padding:2rem;">Fel vid start: ' + e.message + '</p>';
+    }
 });
 
 // Setup event listeners
